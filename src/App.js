@@ -41,19 +41,28 @@ class App extends React.Component {
 
   render() {
     return (
-      <Form onSubmit={this.getCity}>
-        <Form.Group className='search'>
-          <Form.Label>City Look Up</Form.Label>
-          <Form.Control type='text' placeholder='Type a city here!' />
-          <Form.Text className='undertext'>
-            Search from anywhere in the world!
-          </Form.Text>
-        </Form.Group>
-        <Button variant='info' type='submit'>
-          Submit
-        </Button>
-      </Form>
-    )
+      <>
+        <Form onSubmit={this.getCity}>
+          <Form.Group className='search'>
+            <Form.Label>City Look Up</Form.Label>
+            <Form.Control type='text' placeholder='Type a city here!' />
+            <Form.Text className='undertext'>
+              Search from anywhere in the world!
+            </Form.Text>
+          </Form.Group>
+          <Button variant='info' type='submit'>
+            Submit
+          </Button>
+        </Form>
+        {
+          this.state.error 
+          ? 
+          <p>{this.state.errorMessage}</p>
+          :
+          <p>{this.state.cityData.display_name}</p>
+        }
+      </>
+    );
   }
 }
 

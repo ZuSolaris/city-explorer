@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +21,46 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+body{
+  margin-top: 20rem;
+  color:white;
+  background-image: url(../img/NASA.png);
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#blue {
+  padding-right:auto;
+padding-left:auto;
+  color: white;
+  background-color: rgb(9, 103, 255);
+  border-radius: 20px;
+  border-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#title{
+  font-style: bold;
+}
+#lat{
+  font-style: bold;
+}
+
+#lon {
+  font-style: bold;
+}
+
+
+#map {
+  border-style: none;
+  border-radius: 20px;
+}
+.copyrite {
+  font-size: 62.5%;
+ margin-top: 35rem;
+
 }
 
 .App-link {

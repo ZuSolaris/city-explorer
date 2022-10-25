@@ -41,11 +41,34 @@ Actual time needed to complete: 1 Hour 24 Mins
 
 Name of feature:API Display
 
-Estimate of time needed to complete: 1
+Estimate of time needed to complete: 1 Hour
 
 Start time: 3:50
 
 Finish time: 4:36
 
 Actual time needed to complete: 46 Mins
+
+Name of feature:City Map
+
+Estimate of time needed to complete: 1 Hour 30 Mins
+
+Start time: 4:46
+
+Finish time: 5:46
+
+Actual time needed to complete: 1 Hour
+
+Name of feature:Error Prevention
+
+Estimate of time needed to complete: 40 Mins
+
+Start time: 4:46
+
+Finish time: 4:46
+
+Actual time needed to complete: Already done while doing feature 2.
+
+
+
 

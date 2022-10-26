@@ -77,6 +77,8 @@ cityRename = (e) => {
             <div>
           
           <p id = 'title'>{this.state.cityData.display_name}</p>
+          <p>Weather Data</p>
+          <p>{this.props.url}</p>
           <p id = 'lat'>{this.state.cityData.lat}</p>
           <p id = 'lon'>{this.state.cityData.lon}</p>
           <img id= "map" src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_CITYLOC_API_KEY}&center=${this.state.cityData.lat},${this.state.cityData.lon}&zoom=12&size=400x400&maptype='streets'&markers=icon:small-red-cutout|${this.state.cityData.lat}${this.state.cityData.lon}`} alt= "map"/>

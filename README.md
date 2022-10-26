@@ -72,3 +72,28 @@ Actual time needed to complete: Already done while doing feature 2.
 
 
 
+Name of feature:Forecast Maker
+
+Estimate of time needed to complete: 3 Hours
+
+Start time: 1:10
+
+Finish time: 4:50
+
+Actual time needed to complete: 3:40 Mins
+
+
+Name of feature:Forecast Render
+
+Estimate of time needed to complete: 2 Hours
+
+Start time: 4:55
+
+Finish time: 
+
+Actual time needed to complete: 
+
+
+
+
+

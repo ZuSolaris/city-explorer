@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './App.css';
-import { findAllByTestId } from '@testing-library/react';
 
 class App extends React.Component {
   constructor(props) {

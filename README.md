@@ -10,7 +10,7 @@
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-<img src='./img/wrrc.png'>
+<img src='./img/WRC.png'>
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -91,5 +91,29 @@ Start time: 4:55
 
 Finish time: 9:37
 
-Actual time needed to complete: 4:42 minutes :(
+Actual time needed to complete: 4:42 minutes
+
+Name of feature: Weatherbit API 
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 1:10 
+
+Finish time: 4:30 
+
+Actual time needed to complete: 3:30
+
+Name of feature: Movie API
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 4:30 
+
+Finish time: 8:30 
+
+Actual time needed to complete: 4 Hours
+
+
+
+
 

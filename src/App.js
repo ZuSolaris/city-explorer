@@ -1,10 +1,12 @@
 import React from 'react';
 import axios from 'axios';
 import Weather from './Weather';
+import Movie from './Movie';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './App.css';
+import { findAllByTestId } from '@testing-library/react';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,6 +17,7 @@ class App extends React.Component {
       wErrorMsg: '',
       cityData: [],
       city: '',
+      movieData: [],
       error: false,
       errorMsg: '',
       img: ''
@@ -43,20 +46,22 @@ class App extends React.Component {
         cityData: cityData.data[0],
         error: false,
         img: cityData.data[0],
- 
-    }, ()=> this.getWeather());
+
+      }, this.callAPI)
     } catch (error) {
       this.setState({
         error: true,
         errorMsg: error.message
       })
-      console.log('test');
     }
 
   }
-
+callAPI = async () => {
+  await this.getWeather()
+  await this.getMovie()
+}
   getWeather = async (location) => {
-    
+
 
     try {
       let weatherurl = `${process.env.REACT_APP_SERVER}/weather?searchQuery=${this.state.city}&lat=${this.state.cityData.lat}&lon=${this.state.cityData.lon}`
@@ -67,7 +72,7 @@ class App extends React.Component {
 
       this.setState({
         weatherData: weatherData.data,
-       error: false
+        error: false
       });
     } catch (error) {
       this.setState({
@@ -75,10 +80,35 @@ class App extends React.Component {
         ErrorMsg: error.message
       })
       console.log('test');
-      
+
     }
 
   }
+
+  getMovie = async (location) => {
+
+
+
+    try {
+      let movieurl = `${process.env.REACT_APP_SERVER}/Movie?query=${this.state.city}`
+
+      let movieData = await axios.get(movieurl);
+
+      this.setState({
+        movieData: movieData.data,
+        error: false
+      });
+    } catch (error) {
+      this.setState({
+        error: true,
+        ErrorMsg: error.message
+      })
+    }
+  }
+
+
+
+
 
 
   render() {
@@ -110,6 +140,7 @@ class App extends React.Component {
 
               <p id='title'>{this.state.cityData.display_name}</p>
               <Weather weatherData={this.state.weatherData} getWeather={this.getWeather} />
+              <Movie movieData={this.state.movieData}/>
               <p>Coordinates</p>
               <p id='lat'>{this.state.cityData.lat}</p>
               <p id='lon'>{this.state.cityData.lon}</p>

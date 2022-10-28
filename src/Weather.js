@@ -5,6 +5,7 @@ class Weather extends React.Component {
   render() {
     return (
       <>
+      
         {this.props.weatherData.map((data) => (
           <>
             <p>Weather Data</p>

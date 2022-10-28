@@ -9,7 +9,14 @@
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
+
+
 ## Architecture
+
+<img src='./img/wrrc.png'>
+
+<img src='./img/it2.png'>
+
 <img src='./img/WRC.png'>
 
 ## Change Log
@@ -112,6 +119,16 @@ Start time: 4:30
 Finish time: 8:30 
 
 Actual time needed to complete: 4 Hours
+
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 8:30
+
+Finish time: 9:30
+
+Actual time needed to complete: 20 Minutes
+
 
 
 

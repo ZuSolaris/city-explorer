@@ -63,7 +63,7 @@ callAPI = async () => {
 
 
     try {
-      let weatherurl = `${process.env.REACT_APP_SERVER}/weather?searchQuery=${this.state.city}&lat=${this.state.cityData.lat}&lon=${this.state.cityData.lon}`
+      let weatherurl = `${process.env.REACT_APP_SERVER}/weather?query=${this.state.city}&lat=${this.state.cityData.lat}&lon=${this.state.cityData.lon}`
 
       // let weatherurl = `http://localhost:3001/weather?cityName=${this.state.city}&?lat=${this.state.city.lat}&lon=${this.state.city.lon}`
       let weatherData = await axios.get(weatherurl);
@@ -89,7 +89,7 @@ callAPI = async () => {
 
 
     try {
-      let movieurl = `${process.env.REACT_APP_SERVER}/Movie?query=${this.state.city}`
+      let movieurl = `${process.env.REACT_APP_SERVER}/movie?query=${this.state.city}`
 
       let movieData = await axios.get(movieurl);
 
